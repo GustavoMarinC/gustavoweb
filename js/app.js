@@ -3,7 +3,8 @@
 
     angular.module('app', [
         'ngRoute',
-        'ngDialog'
+        'ngDialog',
+        'ngAnimate'
     ]);
 })();
     

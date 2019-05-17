@@ -2,7 +2,7 @@
 (function(){
     'use strict';
 
-    angular.module('app',['ngRoute','ngDialog']).
+    angular.module('app',['ngRoute','ngDialog','ngAnimate']).
     config(function($routeProvider){
         $routeProvider.
             when("/",{
@@ -17,9 +17,9 @@
                 }
             ).
             when(
-                "/contactame",
+                "/aboutMe",
                 {
-                    templateUrl:'views/contactame.html',
+                    templateUrl:'views/aboutMe.html',
                     controller: 'ContactameController'
                 }
             )
