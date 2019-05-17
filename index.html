@@ -12,6 +12,18 @@
 <script src="libs/angularJs.js"></script>
 <script src="libs/route.js"></script>
 <script src="js/route.js"></script>
+<script src="js/controllers/ContactameControler.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/1.0.1/css/ngDialog.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/1.0.1/css/ngDialog-theme-default.min.css">
+<link rel="stylesheet" href="css/micss/animaciones.css">
+<script src="libs/ngDialog.js"></script>
+<script src="libs/angularJs-animate.js"></script>
+<script src="js/directivas/webContactame.js"></script>
+<script src="js/controllers/aboutMeController.js"></script>
+<script src="js/controllers/experienciaController.js"></script>
+<script src="js/controllers/mainController.js"></script>
+<script src="js/controllers/skillcontroller.js"></script>
 </head>
 <body>
     <div ng-app = 'app'>
@@ -37,20 +49,24 @@
                               <a class="nav-link" href="#!/skill">Skills</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Experiencia</a>
+                              <a class="nav-link" href="#!/experiencia">Experiencia</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#" >Proyectos</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#" >Contactame</a>
+                              <a class="nav-link" href="#!/aboutMe">Sobre Mi</a>
                             </li>
                           </ul>
                         </div>
                       </nav>
                 </div>
-                <ng-view></ng-view>
+                <div class="planet-container">
+                    <ng-view class="planet-view"></ng-view>
+                </div>
+                
             </div>
+            <hr>  
     
 </body>
 </html>

@@ -2,7 +2,7 @@
 (function(){
     'use strict';
 
-    angular.module('app',['ngRoute']).
+    angular.module('app',['ngRoute','ngDialog','ngAnimate']).
     config(function($routeProvider){
         $routeProvider.
             when("/",{
@@ -10,6 +10,18 @@
             }).
             when("/skill",{
                 templateUrl:'views/skills.html'
-            })
+            }).
+            when(
+                "/experiencia",{
+                    templateUrl:'views/experiencia.html'
+                }
+            ).
+            when(
+                "/aboutMe",
+                {
+                    templateUrl:'views/aboutMe.html',
+                    controller: 'ContactameController'
+                }
+            )
     })
 })();

@@ -2,7 +2,9 @@
     'use strict';
 
     angular.module('app', [
-        'ngRoute'
+        'ngRoute',
+        'ngDialog',
+        'ngAnimate'
     ]);
 })();
     
